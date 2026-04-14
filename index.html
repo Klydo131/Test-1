@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple JavaScript Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-calculator"></i> Simple Calculator</h1>
+            <p class="subtitle">A minimalist iOS‑like calculator with basic arithmetic</p>
+        </header>
+
+        <main>
+            <div class="calculator">
+                <!-- Display -->
+                <div class="display-container">
+                    <div class="previous-operand" id="previous-operand"></div>
+                    <div class="current-operand" id="current-operand">0</div>
+                </div>
+
+                <!-- Buttons Grid -->
+                <div class="buttons-grid">
+                    <button class="btn operator" data-action="clear">AC</button>
+                    <button class="btn operator" data-action="toggle-sign">±</button>
+                    <button class="btn operator" data-action="percentage">%</button>
+                    <button class="btn operator" data-action="divide">÷</button>
+
+                    <button class="btn number" data-number="7">7</button>
+                    <button class="btn number" data-number="8">8</button>
+                    <button class="btn number" data-number="9">9</button>
+                    <button class="btn operator" data-action="multiply">×</button>
+
+                    <button class="btn number" data-number="4">4</button>
+                    <button class="btn number" data-number="5">5</button>
+                    <button class="btn number" data-number="6">6</button>
+                    <button class="btn operator" data-action="subtract">−</button>
+
+                    <button class="btn number" data-number="1">1</button>
+                    <button class="btn number" data-number="2">2</button>
+                    <button class="btn number" data-number="3">3</button>
+                    <button class="btn operator" data-action="add">+</button>
+
+                    <button class="btn number zero" data-number="0">0</button>
+                    <button class="btn number" data-action="decimal">.</button>
+                    <button class="btn equals" data-action="equals">=</button>
+                </div>
+
+                <div class="keyboard-hint">
+                    <i class="fas fa-keyboard"></i> Keyboard support: 0‑9, +, -, *, /, Enter, Escape, .
+                </div>
+            </div>
+
+            <div class="instructions">
+                <h3><i class="fas fa-info-circle"></i> How to Use</h3>
+                <ul>
+                    <li>Click buttons or use keyboard to input numbers and operators.</li>
+                    <li><strong>AC</strong> clears everything; <strong>±</strong> toggles sign.</li>
+                    <li><strong>%</strong> converts to percentage (divide by 100).</li>
+                    <li>Press <strong>=</strong> or <strong>Enter</strong> to calculate.</li>
+                    <li>Press <strong>Escape</strong> or <strong>AC</strong> to clear.</li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <p>Simple JavaScript Calculator • Created with <i class="fas fa-heart"></i></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
